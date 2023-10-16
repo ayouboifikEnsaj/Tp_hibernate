@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ma.projet.test;
+package ma.test;
 
 import java.util.Date;
-import ma.projet.beans.Femme;
-import ma.projet.beans.Homme;
-import ma.projet.beans.Mariage;
-import ma.projet.beans.MariageKey;
-import ma.projet.service.FemmeService;
-import ma.projet.service.HommeService;
-import ma.projet.service.MariageService;
+import ma.beans.Femme;
+import ma.beans.Homme;
+import ma.beans.Mariage;
+import ma.beans.MariageKey;
+import ma.service.FemmeService;
+import ma.service.HommeService;
+import ma.service.MariageService;
 
 /**
  *

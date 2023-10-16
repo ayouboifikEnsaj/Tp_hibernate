@@ -7,6 +7,8 @@ package service;
 
 import dao.IDao;
 import entities.Tache;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
@@ -118,5 +120,68 @@ public class TacheService implements IDao<Tache> {
         }
         return taches;
     }
-
+       public void getTachesPrixSupérieurA1000DH(){
+        List<Tache> taches;
+        Session session = null;
+        Transaction tx = null;
+        try {
+            session = HibernateUtil.getSessionFactory().openSession();
+            tx = session.beginTransaction();
+            taches = session.createQuery("from Tache where prix > 1000").list();
+            tx.commit();
+            taches.stream().forEach((t) -> {
+                System.out.println(t);
+            });
+            
+        } catch (HibernateException ex) {
+            if (tx != null) {
+                tx.rollback();
+            }
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+    } 
+ public void getTachesRealiseesEntreDeuxDate(Date minDate, Date maxDate){
+        Session session = null;
+        Transaction tx = null;
+        String query = "FROM EmployeTache et "
+                + "JOIN et.tache Tache "
+                + "JOIN et.employe Employe "
+                + "WHERE et.dateFinReelle <= CURRENT_DATE() AND "
+                + "et.dateDebutReelle >= :minDate AND "
+                + "et.dateFinReelle <= :maxDate";
+        
+        try{
+            session = HibernateUtil.getSessionFactory().openSession();
+            tx = session.beginTransaction();
+            
+            List<Object[]> results = session.createQuery(query)
+                    .setParameter("minDate", minDate)
+                    .setParameter("maxDate", maxDate)
+                    .list();
+            
+            List<Tache> taches = new ArrayList<>();
+            
+            for (Object[] result : results) {
+                Tache produit = (Tache) result[1];
+                taches.add(produit);
+            }
+            
+            for(Tache t : taches){
+                System.out.println(t);
+            }
+            
+            tx.commit();
+        }catch(HibernateException ex){
+            if(tx != null){
+                tx.rollback();
+            }
+        }finally{
+            if(session != null){
+                session.close();
+            }
+        }
+    }
 }

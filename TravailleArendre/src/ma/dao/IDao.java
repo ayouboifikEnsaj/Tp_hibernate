@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ma.projet.dao;
+package ma.dao;
 
 import java.util.List;
 

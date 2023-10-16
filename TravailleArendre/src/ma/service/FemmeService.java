@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ma.projet.service;
+package ma.service;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
-import ma.projet.beans.Femme;
-import ma.projet.beans.Homme;
-import ma.projet.beans.Mariage;
-import ma.projet.beans.Personne;
-import ma.projet.dao.IDao;
-import ma.projet.util.HibernateUtil;
+import ma.beans.Femme;
+import ma.beans.Homme;
+import ma.beans.Mariage;
+import ma.beans.Personne;
+import ma.dao.IDao;
+import ma.util.HibernateUtil;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

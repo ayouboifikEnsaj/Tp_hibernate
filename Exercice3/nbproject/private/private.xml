@@ -3,23 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/config/hibernate.cfg.xml</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/entities/Employe.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/service/EmployeService.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/entities/Projet.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/entities/Tache.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/entities/EmployeTache.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/entities/EmployeTachePk.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/service/EmployeTacheService.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/Test/TestEmploye.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/Test/TestTache.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/Test/TestProjet.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/Test/TestEmployeTache.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/service/ProjetService.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/Test/TestProjetByEmploye.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/Test/TestTacheByEmploye.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/Test/TestTachePlanifierPourProjet.java</file>
-            <file>file:/C:/Users/PC/Documents/NetBeansProjects/Exo3FinalVersion/src/service/TacheService.java</file>
+            <file>file:/C:/Users/PC/Desktop/Tp_Hibernate/Exo3FinalVersion/src/service/TacheService.java</file>
+            <file>file:/C:/Users/PC/Desktop/Tp_Hibernate/Exo3FinalVersion/src/service/ProjetService.java</file>
+            <file>file:/C:/Users/PC/Desktop/Tp_Hibernate/Exo3FinalVersion/src/Test/TestGetTachesRealiseesEntreDeuxDate.java</file>
         </group>
     </open-files>
 </project-private>

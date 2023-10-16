@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ma.projet.service;
+package ma.service;
 
 import java.util.List;
-import ma.projet.beans.Mariage;
-import ma.projet.beans.Mariage;
-import ma.projet.dao.IDao;
-import ma.projet.util.HibernateUtil;
+import ma.beans.Mariage;
+import ma.beans.Mariage;
+import ma.dao.IDao;
+import ma.util.HibernateUtil;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

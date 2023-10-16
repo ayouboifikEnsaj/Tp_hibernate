@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ma.projet.beans;
+package ma.beans;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -18,15 +18,15 @@ import javax.persistence.OneToMany;
  */
 
 @Entity
-public class Femme extends Personne{
+public class Homme extends Personne {
     
-    @OneToMany(mappedBy="femme", fetch= FetchType.EAGER)
+    @OneToMany(mappedBy="homme", fetch= FetchType.EAGER)
     private List<Mariage> mariage = new ArrayList<>();
     
-    public Femme() {
+    public Homme() {
     }
     
-    public Femme(String nom, String prenom, String telephone, String address, Date dateNaissance) {
+    public Homme(String nom, String prenom, String telephone, String address, Date dateNaissance) {
         super(nom, prenom, telephone, address, dateNaissance);
     }
 
@@ -37,9 +37,10 @@ public class Femme extends Personne{
     public void setMariage(List<Mariage> mariage) {
         this.mariage = mariage;
     }
-    
+
     @Override
     public String toString() {
-        return  "Femme" + super.toString() + ", mariage=" + mariage + '}';
+        return  "Homme" + super.toString() + ", mariage=" + mariage + '}';
     }
+    
 }
