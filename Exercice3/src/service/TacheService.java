@@ -129,9 +129,14 @@ public class TacheService implements IDao<Tache> {
             tx = session.beginTransaction();
             taches = session.createQuery("from Tache where prix > 1000").list();
             tx.commit();
-            taches.stream().forEach((t) -> {
+            
+//            taches.stream().forEach((t) -> {
+//                System.out.println(t);
+//            });
+            System.out.println("\n-----------------------taches superieurs a 100------------------------\n");
+            for(Tache t : taches){
                 System.out.println(t);
-            });
+            }
             
         } catch (HibernateException ex) {
             if (tx != null) {

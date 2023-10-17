@@ -14,6 +14,6 @@ import service.EmployeService;
 public class TestProjetByEmploye {
     public static void main(String[] args) {
         EmployeService es = new EmployeService();
-        es.projetByEmploye(es.findById(7));
+        es.getProjetsByEmploye(es.findById(7));
     }
 }

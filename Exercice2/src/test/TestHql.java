@@ -8,6 +8,7 @@ package test;
 import entities.LigneCommandeProduit;
 import entities.Produit;
 import java.util.Date;
+import java.util.List;
 import service.ProduitService;
 
 /**
@@ -17,8 +18,10 @@ import service.ProduitService;
 public class TestHql {
     public static void main(String[] args) {
         ProduitService ps = new ProduitService();
-      
-        for(Produit p : ps.findBetweenDate(new Date("2023/10/14"), new Date("2023/10/16"))){
+        List<Produit> produits = null;
+        produits =  ps.findBetweenDate(new Date("2023/10/14"), new Date("2023/10/16"));
+        System.out.println("\n-------------------les produit entre deux date 2023/10/14 et 2023/10/16-----------------------------------------\n");
+        for(Produit p : produits){
             System.out.println(p+"\n");
         }
     }

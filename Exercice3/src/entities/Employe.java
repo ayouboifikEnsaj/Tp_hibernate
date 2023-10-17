@@ -33,6 +33,8 @@ public class Employe {
     private String telephone;
    @OneToMany(mappedBy = "employe", fetch = FetchType.EAGER)
     private List<Projet> projets;
+   @OneToMany(mappedBy = "employe", fetch = FetchType.EAGER)
+    private List<EmployeTache> employeTache;
 
     public Employe() {
     }
@@ -46,6 +48,11 @@ public class Employe {
     public int getId() {
         return id;
     }
+
+    public List<EmployeTache> getEmployeTache() {
+        return employeTache;
+    }
+    
 
     public String getNom() {
         return nom;

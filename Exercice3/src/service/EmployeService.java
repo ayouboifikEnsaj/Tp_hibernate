@@ -127,42 +127,54 @@ public class EmployeService implements IDao<Employe> {
         EmployeService es = new EmployeService();
         List<Projet> projets;
         projets = es.findById(e.getId()).getProjets();
+        System.out.println("\n-----------------------------les projets de lemloyee------"+e.getNom());
         for(Projet p : projets){
             System.out.println(p);
         }
         
     }
-     public void findTacheByEmploye(Employe  e){
-        
-       List<EmployeTache> employeTaches = null;
-       Session session = null;
-       Transaction tx = null;
-       
-               
-       String query =  "select l FROM employetache l "
-                + "join l.emplpoye employe "
-                + "join l.tache tache "
-                + "where employe.id = :id";
-        try {
-            session = HibernateUtil.getSessionFactory().openSession();
-            tx = session.beginTransaction();
-             employeTaches =  session.createQuery(query)
-                    .setParameter("id", e.getId()).list();
-             tx.commit();
-             
-             
-               for(EmployeTache l : employeTaches ){
-                   System.out.println(l.getTache());
-        }
-        } catch (HibernateException ex) {
-            if (tx != null)
-                tx.rollback();
-            
-        }finally{
-            if (session != null) 
-                session.close();
-        }
-       
+     public void getTachesByEmploye(Employe e){
+        e.getEmployeTache().stream().forEach((et) -> {
+            System.out.println(et.getTache());
+        });
     }
-
+    
+    public void getProjetsByEmploye(Employe e){
+        for(Projet p : e.getProjets()){
+            System.out.println(p);
+        } 
+    }
 }
+//     public void findTacheByEmploye(Employe  e){
+//        
+//       List<EmployeTache> employeTaches = null;
+//       Session session = null;
+//       Transaction tx = null;
+//       
+//               
+//       String query =  "select l FROM employetache l "
+//                + "join l.emplpoye employe "
+//                + "join l.tache tache "
+//                + "where employe.id = :id";
+//        try {
+//            session = HibernateUtil.getSessionFactory().openSession();
+//            tx = session.beginTransaction();
+//             employeTaches =  session.createQuery(query)
+//                    .setParameter("id", e.getId()).list();
+//             tx.commit();
+//             
+//             System.out.println("--------------les tache de l'employee :"+e.getNom());
+//               for(EmployeTache l : employeTaches ){
+//                   System.out.println(l);
+//        }
+//        } catch (HibernateException ex) {
+//            if (tx != null)
+//                tx.rollback();
+//            
+//        }finally{
+//            if (session != null) 
+//                session.close();
+//        }
+//       
+    
+

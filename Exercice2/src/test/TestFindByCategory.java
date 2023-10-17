@@ -14,9 +14,10 @@ import service.ProduitService;
  */
 public class TestFindByCategory {
     public static void main(String[] args) {
-        
+       
         CategorieService cs = new CategorieService();
         ProduitService ps = new ProduitService();
+         System.out.println("\n---------------les produit du categorie 2----------------------------------------\n");
          ps.findByCategorie(cs.findById(2));
     }
     

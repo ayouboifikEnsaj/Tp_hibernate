@@ -8,7 +8,7 @@ package ma.service;
 import java.util.List;
 import util.HibernateUtil;
 import ma.entity.Produit;
-import ma.projet.dao.IDao;
+import ma.dao.IDao;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
