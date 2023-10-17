@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ma.projet.service;
+package ma.service;
 
 import java.util.List;
-import ma.project.util.HibernateUtil;
-import ma.projet.entity.Produit;
+import util.HibernateUtil;
+import ma.entity.Produit;
 import ma.projet.dao.IDao;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;

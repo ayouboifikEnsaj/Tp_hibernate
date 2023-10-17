@@ -3,9 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/PC/Desktop/Tp_Hibernate/Exo3FinalVersion/src/service/TacheService.java</file>
-            <file>file:/C:/Users/PC/Desktop/Tp_Hibernate/Exo3FinalVersion/src/service/ProjetService.java</file>
-            <file>file:/C:/Users/PC/Desktop/Tp_Hibernate/Exo3FinalVersion/src/Test/TestGetTachesRealiseesEntreDeuxDate.java</file>
+            <file>file:/C:/Users/PC/Desktop/Tp_Hibernate/Exercice3/src/entities/Tache.java</file>
+            <file>file:/C:/Users/PC/Desktop/Tp_Hibernate/Exercice3/src/Test/TestGetTachesPrixSupérieurA1000DH.java</file>
+            <file>file:/C:/Users/PC/Desktop/Tp_Hibernate/Exercice3/src/service/TacheService.java</file>
         </group>
     </open-files>
 </project-private>

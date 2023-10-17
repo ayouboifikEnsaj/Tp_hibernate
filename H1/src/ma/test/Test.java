@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ma.projet.test;
+package ma.test;
 
 import java.util.Date;
 import java.util.List;
-import ma.projet.entity.Produit;
-import ma.projet.service.ProduitService;
+import ma.entity.Produit;
+import ma.service.ProduitService;
 
 /**
  *
